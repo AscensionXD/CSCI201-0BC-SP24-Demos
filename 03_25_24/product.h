@@ -135,4 +135,20 @@ private:
     int scoopAmount;
     static int prodNum;
 };
+
+flavorType iceCream::getFlavor() const {
+    return flavor;
+
+int iceCream::getScoopAmount() const {
+    return scoopAmount;
+
+void iceCream::setFlavor(flavorType _flavor) {
+    flavor = _flavor;
+
+void iceCream::setScoopAmount(int _scoopAmount) {
+    scoopAmount = _scoopAmount;
+
+
+
+
 #endif
