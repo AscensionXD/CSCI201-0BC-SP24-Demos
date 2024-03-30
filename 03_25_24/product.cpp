@@ -314,7 +314,14 @@ iceCream::iceCream(flavorType flavor, int scoopAmount) : product("Ice Cream", sc
     void iceCream::setScoopAmount(int _scoopAmount) {
     scoopAmount = _scoopAmount;
 }
-   
+
+   flavorType iceCream::getFlavor() const {
+    return flavor;
+}
+
+int iceCream::getScoopAmount() const {
+    return scoopAmount;
+}
 
 std::string iceCream::tostring()
 {
