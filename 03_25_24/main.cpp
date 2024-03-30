@@ -8,6 +8,12 @@ void resetStream();
 
 int main()
 {
+        //ice cream object and call to the toString()
+     iceCream myIceCream(CHOCOLATEICECREAM, 3);
+
+        std::cout << "Ice Cream Details:\n" << myIceCream.tostring() << std::endl;
+
+
     /* std::string prodNum = "1234a";
     std::string descript = "My product";
     product p(prodNum, 3.99, descript);

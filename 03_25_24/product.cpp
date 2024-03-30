@@ -301,10 +301,21 @@ double iceCream::scoopPricing(int scoops)
 int iceCream::prodNum = 1;
 iceCream::iceCream(flavorType flavor, int scoopAmount) : product("Ice Cream", scoopPricing(scoopAmount), "I" + std::to_string(prodNum++))
 {
-    // setFlavor(flavor);
-    // setScoopAmount(scoopAmount);
-    purchase();
+ setFlavor(flavor);
+ setScoopAmount(scoopAmount);
+ purchase();
+      
 }
+ // setFlavor(flavor);
+    void iceCream::setFlavor(flavorType _flavor) {
+    flavor = _flavor;
+    }
+    // setScoopAmount(scoopAmount);
+    void iceCream::setScoopAmount(int _scoopAmount) {
+    scoopAmount = _scoopAmount;
+}
+   
+
 std::string iceCream::tostring()
 {
     std::ostringstream out;
